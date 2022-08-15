@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script defer src = "airQuality.js"></script>
+</head>
+<body class = "realBody">
+  
+  <div id="header">
+    
+      <img id="logo" src="https://cdn.glitch.global/c2a1a593-2be2-48c5-ade9-c7680e31d113/logo2.png?v=1660433667035">
+    
+    <div id="pages">
+      <a href="home.html">Home</a>
+    <a href="weather.html">Weather</a>
+    <a href="airQuality.html" id="airQualityTxt">Air Quality</a>
+    </div>
+    
+  </div>
+  
+  <div id="airForm">
+  <form>
+      <label>Enter your zip code:</label>
+      <input value="11692" type="text" id="airInput"/>
+      <button id="airSubmit">Submit</button>
+   
+    </form>  
+  </div>
+
+  <h1>
+      The current air quality is:
+    </h1>
+  <div id="airQuality">
+    
+    
+  </div>
+  <h1>Index Scale:</h1>
+  <div id="scale">
+    <div id="good" class="scaleNum">
+      <h1>1</h1>
+      <h2>Good</h2>
+   </div>
+
+   <div id="fair" class="scaleNum">
+    <h1>2</h1>
+    <h2>Fair</h2>
+  </div>
+
+  <div id="moderate" class="scaleNum">
+    <h1>3</h1>
+    <h2>Moderate</h2>
+  </div>
+
+  <div id="poor" class="scaleNum">
+    <h1>4</h1>
+    <h2>Poor</h2>
+ </div>
+
+ <div id="very_poor" class="scaleNum">
+  <h1>5</h1>
+  <h2>Very Poor</h2>
+  </div>
+  </div>
+    
+</body>
+</html>

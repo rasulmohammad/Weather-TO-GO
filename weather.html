@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Day</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script defer src="samples/hourlySample.js"></script>
+    <script defer src="samples/dailySample.js"></script>
+    <script defer src="samples/annualBackSample.js"></script>
+    <script defer src="samples/annualForwardSample.js"></script>
+    <script defer src = "weather.js"></script>
+</head>
+<body class = "realBody">
+  
+  <div id="header">
+
+      <img id="logo" src="https://cdn.glitch.global/c2a1a593-2be2-48c5-ade9-c7680e31d113/logo2.png?v=1660433667035">
+    
+    <div id="pages">
+      <a href="home.html">Home</a>
+    <a href="weather.html" id="weatherTxt">Weather</a>
+    <a href="airQuality.html">Air Quality</a>
+    </div>
+    
+  </div>
+  
+  <div id="currWeather">
+    <h1>
+      Current Weather
+    </h1>
+    
+    <form>
+      <label>Enter your zip code:</label>
+      <input value="11692" type="text" id="zipInput"/>
+      <button id="zipSubmit">Submit</button>
+   
+    </form>
+    
+    <div id="currWeatherDiv">
+      
+    </div>
+    
+    <div id="timeline">
+      <h2>Timeline</h2>
+      
+      <div>
+        
+        <form>
+          <select id="timeLength">
+            <option>Hourly</option>
+            <option>Daily</option>
+            <option>Annually</option>
+          </select>
+        
+          <select id="timeRange">
+            <option>Next 5</option>
+            <option>Last 5</option>
+          </select>
+          
+        </form>
+        
+        <div class="newTimeDivs">
+          
+        </div>
+        
+      </div>
+      <p>
+      <a>Want to get unlimited access to our weather timeline? Consider subscribing to our <a href="home.html" id="highlight">annual subscription!</a></a>
+      </p>
+    </div>
+  </div>
+    
+</body>
+</html>
