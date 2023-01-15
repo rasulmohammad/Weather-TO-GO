@@ -4,105 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather</title>
+    <title>Weather TO-GO</title>
     <link rel = "stylesheet" href = "style.css">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
     <script defer src = "home.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<!--     <script defer src = "script.js"></script> -->
 </head>
 <body class = "realBody">
-<!-- Navbar -->
-  <div id="header" class="homeHeader">
-    <img id="logo" src="https://cdn.glitch.global/c2a1a593-2be2-48c5-ade9-c7680e31d113/logo2.png?v=1660433667035">
-    
-    <div id="pages">
-      <a href="home.html" id="homeTxt">Home</a>
-      <a href="weather.html">Weather</a>
-      <a href="airQuality.html">Air Quality</a>
+    <!-- Navigation Bar -->
+    <div id="header" class="homeHeader">
+      <img id="logo" src="https://cdn.glitch.global/c2a1a593-2be2-48c5-ade9-c7680e31d113/logo2.png?v=1660433667035">
+      
+      <div id="pages">
+        <a href="home.html" id="homeTxt">Home</a>
+        <a href="weather.html">Weather</a>
+        <a href="airQuality.html">Air Quality</a>
+      </div>
+      
     </div>
-    
-  </div>
-<br>
-  <div id="mission">
-    <h1>
-     Our Mission
-    </h1>
-    <p>
-       With Weather To-Go, our primary focus is to spread awareness about the dwindling state of our environment. With our app, we intend on showcasing constantly updating statistics regarding environmental concerns like climate change and air pollution
-    </p>
-  </div>
-<br>
-<br>
-<div class="container">
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-              <img class="carouselImg" src="https://www.popsci.com/uploads/2020/10/21/KMCOZHP7RNEEPNAJQNYLFPHYYE.jpg?auto=webp&width=1440&height=1080/ " alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Air pollution</h5>
-                <p>4.5 million deaths were linked to outdoor air pollution in 2019</p>
-              </div>
+    <br>
+    <div id="mission">
+        <h1>Our Mission</h1>
+        <p>With Weather To-Go, our primary focus is to spread awareness about the dwindling state of our environment. With our app, we intend on showcasing constantly updating statistics regarding environmental concerns like climate change and air pollution.</p>
+    </div>
+    <br>
+    <br>
+    <!-- Embedded content; allows the user to switch between 2 sliding images and text by using the 'previous' and 'next' buttons. -->
+    <div class="container">
+        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                  <img class="carouselImg" src="https://www.popsci.com/uploads/2020/10/21/KMCOZHP7RNEEPNAJQNYLFPHYYE.jpg?auto=webp&width=1440&height=1080/ " alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Air pollution</h5>
+                    <p>4.5 million deaths were linked to outdoor air pollution in 2019</p>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <img class="carouselImg" src="https://tewksburytribune.com/wp-content/uploads/2020/11/Infographic_Impact_Climate_Change.jpg" alt="...">
+                  <div class="carousel-caption d-none d-md-block">
+                    <h5>Climate change</h5>
+                    <p>Between 2030 and 2050, over 250,000 additional deaths will be linked to climate change</p>
+                  </div>
+                </div>
             </div>
-            <div class="carousel-item">
-              <img class="carouselImg" src="https://tewksburytribune.com/wp-content/uploads/2020/11/Infographic_Impact_Climate_Change.jpg" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Climate change</h5>
-                <p>Between 2030 and 2050, over 250,000 additional deaths will be linked to climate change</p>
-              </div>
-            </div>
+            <a onclick="$('#carouselExampleControls').carousel('prev')" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
+            <a onclick="$('#carouselExampleControls').carousel('next')" class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only"></span>
+            </a>
         </div>
-        <a onclick="$('#carouselExampleControls').carousel('prev')" class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-        </a>
-        <a onclick="$('#carouselExampleControls').carousel('next')" class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only"></span>
-        </a>
-    </div>
-</div>
+  </div>
   
+  <!-- The corresponding text for each slide is to be appended here by 'style.css' if the user's display screen is small enough. -->
   <div id="carouselTxt">
   </div>
-  
-  
-<div id="contributors">
-  <h3>
-    Support Us: 
-  </h3>
-  <a href="">Annual Subscription</a>
-  
-  <h3>
-    Climate Change Awareness
-  </h3>
-  <a href="">Click here to read about climate change.</a>
-  
-  <h3>
-      Lorem Ipsum
-  </h3>
-  <a href="">Lorem Ipsum</a>
-  
+
+  <!-- Section that gives the user links for education about climate change along with a link to our annual subscription for support. -->
+  <div id="contributors">
+
+      <h3>Support Us:</h3>
+      <a href="">Annual Subscription</a>
+      
+      <h3>Lack of awareness for climate change</h3>
+      <a target = "_blank" href="https://www.nationalgeographic.com/environment/article/climate-change-awareness-polls-show-rising-concern-for-global-warming">Click here for the article</a>
+    <br>
+    <br>
+      <h3>Rising sea level</h3>
+      <a target = "_blank" href="https://www.climate.gov/news-features/understanding-climate/climate-change-global-sea-level">Click here for the article</a>
+    <br>
+    <br>
+      <h3>Loss of habitats</h3>
+      <a target = "_blank" href="https://www.weforum.org/agenda/2020/11/earth-natural-habitats-destroyed-biodiversity-loss#:~:text=Climate%20change%20and%20global%20food,extinctions%20of%20already%20vulnerable%20species.">Click here for the article</a>
+
   </div>  
   
-<br>
-<br>
-<br>
-  
-  <div id = "credits">
   <br>
-    <p>
-      Group Members: 
-      
-      <p>Rahsun Komatsuzaki-Fields (JavaScript, wireframing),</p>
-    <p>Rasul Mohammad (HTML, CSS, Leader),</p>
-      <p>Fahim Muntasir (CSS, Presenter),</p>
-      <p>Michael Tejada (Debugger, Presenter)</p>
-    <p><br>&copy;2022 All Star Code Summer Intensive </p>
-    <button id = "back-to-top-btn"><p>Back to top ^</p></button> 
-    </p>
+  <br>
+  <br>
+
+  <!-- The people and organizations responsible for our project. -->
+  <div id = "credits">
+    <br>
+      <p>
+        Group Members: 
+        
+        <p>Rahsun Komatsuzaki-Fields (JavaScript, Wireframer),</p>
+        <p>Rasul Mohammad (HTML, CSS, Presentation Leader),</p>
+        <p>Fahim Muntasir (CSS, Debugger)</p>
+        <p>Michael Tejada (Planner / Brainstormer, Live Presenter)</p>
+      <p><br>&copy;2022 All Star Code Summer Intensive</p>
+      <button id = "back-to-top-btn"><p>Back to top ^</p></button> 
+      </p>
   </div>
 
+</body> 
 
-  </body> 
 </html>
