@@ -1,374 +1,364 @@
-/* *{
-  border: 4px solid green;
-} */
-
 .realBody{
-    /*     border: 4px solid green; */
-        font-family: Helvetica; 
-        background-color: #638eba;
-      }
-      
-      #header{
-        display:flex;
-        justify-content:space-between;
-        background-color: #fec601;
-        padding: 5px;
-        text-decoration: none;
-        color: orange;
-        font-size: 30px;
-        
-      }
+  font-family: Helvetica; 
+  background-color: #638eba;
+}
     
-    
-      .homeHeader{
-        margin:10px;
-      }
-      
-      #logo{
-        display:flex;
-        justify-content:flex-start;
-        margin-left: 10px;
-        width:150px
-      }
-      
-      #pages{
-      /*   border: 4px solid red; */
-        width: 50vw;
-        display:flex;
-        justify-content:flex-end;
-        justify-content:space-around;
-        align-items: center;
-        
-      }
-      
-      #mission,#currWeather,#airQuality{
-        text-align:center;
-      }
-      
-      .realBody a{
-        margin-left:10px;
-        text-decoration: none;
-        color: white;
-      }
-      
-      #airQualityTxt,#homeTxt,#weatherTxt{
-        font-weight:bolder;
-      }
-      
-      
-      #credits{
-        text-align: center;
-        margin-top:1vw;
-        background-color: #2A2A2A;
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-      }
-      
-      
-      #mission{
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-        margin-left:10vw;
-        margin-right:10vw;
-        color: black;
-      }
-      
-      #mission p{
-        font-size: 35px;
-        line-height: 70px;
-      }
-    
-      #mission h1{
-        font-size: 75px;
-        font-weight: bold;
-        margin-top: 1vw;
-        margin-bottom: 1vw;
-      }
-      
-      #currWeather{
-        color:white;
-      }
-      
-      h1,h2{
-        color:black;
-        text-align: center;
-      }
-    
-    .carousel-inner p{
-      background-color: #638eba;
-      color: white;
-      font-weight: bolder;
-      font-size: 20px;
-    }
-    
-    .carousel-inner h5{
-      background-color: #638eba;
-      color: white;
-      font-weight: bolder;
-      font-size: 30px;
-    }
-    
-    .carousel-inner img{
-      border: 7px solid black;
-    }
-      
-      
-      #zipSubmit,#airSubmit{
-        margin-left:1vw;
-        padding:10px;
-        border-radius:10px;
-        background-color:#fec601;
-        font-weight: bold;
-      }
-    
-      #zipSubmit:hover,#airSubmit:hover{
-        background-color: gray;
-      }
-    
-      #pages a:hover{
-        color:blue;
-      }
-      
-      .carousel-control-prev-icon,
-      .carousel-control-next-icon{
-        background-color: black;
-        
-      }
-    
-    
-    .container{
-      display:flex;
-      justify-content:center;
-    }
-    
-    .carouselImg{
-      width:50vw;
-      height:40vw;
-    }
-      
-    #carouselTxt{
-          color:#638eba;
-          margin:0px;
-          border:none;
-        }
-    
-    
-      .newTimeDivs{
-        color:black;
-        display:flex;
-        justify-content:space-around;
-        background-color:lightblue;
-        margin-top:1vw;
-        margin-left:10vw;
-        margin-right:10vw;
-        padding:1vw;
-        border-radius:10px;
-        border: 4px black solid;
-    
-      }
-    
-      #reverseTimeDivs{
-        display: flex;
-        flex-direction: row-reverse;
-      }
-    
-      .timelineSegment{
-        border:2px blue solid;
-        border-radius:10px;
-        padding:1vw;
-      }
-    
-      #highlight{
-        text-decoration: underline;
-        color:blue;
-        margin-left:0px;
-      }
-    
-      form label{
-        color:white;
-      }
-    
-      #airForm{
-        display: flex;
-        justify-content: center;
-        margin-top:1vw;
-      }
-    
-      #airQuality{
-        margin-top:2vw;
-        margin-left:20vw;
-        margin-right: 20vw;
-        padding-top:1vw;
-        padding-bottom:3vw;
-        border-radius: 10px;
-        border:4px black solid;
-      }
-    
-      #airQuality h1{
-        font-size: 100px;
-      }
-    
-      .airDesc{
-        margin-top:3vw;
-      }
-      
-      #scale{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        justify-content: space-around;
-        margin-left:10vw;
-        margin-right: 10vw;
-        
-      }
-    
-      #good{
-        background-color: lightgreen;
-      }
-    
-      #fair{
-        background-color: yellow;
-      }
-    
-      #moderate{
-        background-color: orange;
-      }
-    
-      #poor{
-        background-color: red;
-      }
-    
-      #very_poor{
-        background-color: purple;
-      }
-    
-      #very_poor h1,#very_poor h2{
-        color:white;
-      }
-    
-      .scaleNum{
-        width:200px;
-        border: 2px black solid;
-        border-radius: 10px;
-      }
-      
-      @media(max-width:1030px){
-        #header{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-        }
-        #pages{
-          justify-content: center;
-          justify-content: space-around;
-          width:100%;
-          margin-top:5vw;
-          font-size:6vw;
-        }
-        #mission p{
-          margin-top:5vw;
-          font-size: 20px;
-          line-height: 30px;
-        }
-        .newTimeDivs{
-          margin-top:5vw;
-          display:flex;
-          flex-direction:column;
-          padding:5vw;
-        }
-        #reverseTimeDivs{
-          display:flex;
-          flex-direction:column-reverse;
-        }
-        .timelineSegment{
-          margin-bottom:5vw;
-        }
-        #zipSubmit,#airSubmit{
-          margin-top:5vw;
-        }
-        #airQuality{
-          margin-left:5vw;
-          margin-right:5vw;
-          padding:5vw;
-        }
-        #airForm{
-          margin-top:5vw;
-          text-align: center;
-          margin-left:5vw;
-          margin-right:5vw;
-        }
-        #scale{
-          display: flex;
-          flex-direction: column;
-          align-items:center;
-        }
-        .scaleNum{
-          margin-bottom:5vw;
-        }
-        #credits{
-          text-align: center;
-          margin-top:5vw;
-        }
-        .carouselImg{
-          width:80vw;
-          height:60vw;
-      }
-        #carouselTxt{
-          color:white;
-          border:none;
-          text-align:center;
-          margin-top:5vw;  
-          margin-bottom:12vw;
-        }
-        #carouselTxt h5{
-          font-weight:bold;
-        }
-    }
-    
-    #credits p{
-      color: white;
-      font-weight: bolder;
-    }
-      
-    
-    
-    #back-to-top-btn{
-      background-color: #2A2A2A;
-      color: white;
-      font-weight: bolder;
-      display: flex;
-      border: 0px;
-    
-    }
-    
-    #back-to-top-btn p{
-      font-size: 30px;
-    
-    }
-    
-    #back-to-top-btn:hover, #back-to-top-btn:focus{
-        background-color: #333;
-        color: #fff
-    }
-    
-    #contributors{
-      margin-top:3vw;
-      margin-left:20vw;
-      margin-right:20vw;
-      text-align:center
-    }
-    
-    #contributors h3{
-      margin-top:3vw;
-      font-weight:bold
-    }
-    
-    #contributors a{
-      text-decoration:underline;
-    }
-    
-    html {
-        scroll-behavior: smooth;
-    }
+#header{
+  display:flex;
+  justify-content:space-between;
+  background-color: #fec601;
+  padding: 5px;
+  text-decoration: none;
+  color: orange;
+  font-size: 30px;
+}
+  
+.homeHeader{
+  margin:10px;
+}
+
+#logo{
+  display:flex;
+  justify-content:flex-start;
+  margin-left: 10px;
+  width:150px
+}
+
+#pages{
+  width: 50vw;
+  display:flex;
+  justify-content:flex-end;
+  justify-content:space-around;
+  align-items: center;
+}
+
+#mission,#currWeather,#airQuality{
+  text-align:center;
+}
+
+.realBody a{
+  margin-left:10px;
+  text-decoration: none;
+  color: white;
+}
+
+#airQualityTxt,#homeTxt,#weatherTxt{
+  font-weight:bolder;
+}
+
+#credits{
+  text-align: center;
+  margin-top:1vw;
+  background-color: #2A2A2A;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+#mission{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+  margin-left:10vw;
+  margin-right:10vw;
+  color: black;
+}
+
+#mission p{
+  font-size: 35px;
+  line-height: 70px;
+  color:white;
+}
+
+#mission h1{
+  font-size: 75px;
+  font-weight: bold;
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+}
+
+#currWeather{
+  color:white;
+}
+
+h1,h2{
+  color:black;
+  text-align: center;
+}
+
+.carousel-inner p{
+  background-color: #638eba;
+  color: white;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.carousel-inner h5{
+  background-color: #638eba;
+  color: white;
+  font-weight: bolder;
+  font-size: 30px;
+}
+
+.carousel-inner img{
+  border: 7px solid black;
+}
+
+#zipSubmit,#airSubmit{
+  margin-left:1vw;
+  padding:10px;
+  border-radius:10px;
+  background-color:#fec601;
+  font-weight: bold;
+}
+
+#zipSubmit:hover,#airSubmit:hover{
+  background-color: gray;
+}
+
+#pages a:hover{
+  color: #638eba;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon{
+  background-color: black;
+  
+}
+
+.container{
+  display:flex;
+  justify-content:center;
+}
+
+.carouselImg{
+  width:50vw;
+  height:40vw;
+}
+
+#carouselTxt{
+  color:#638eba;
+  margin:0px;
+  border:none;
+}
+
+.newTimeDivs{
+  color:black;
+  display:flex;
+  justify-content:space-around;
+  background-color:lightblue;
+  margin-top:1vw;
+  margin-left:10vw;
+  margin-right:10vw;
+  padding:1vw;
+  border-radius:10px;
+  border: 4px black solid;
+}
+
+#reverseTimeDivs{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.timelineSegment{
+  border:2px blue solid;
+  border-radius:10px;
+  padding:1vw;
+}
+
+#highlight{
+  text-decoration: underline;
+  color:blue;
+  margin-left:0px;
+}
+
+form label{
+  color:white;
+}
+
+#airForm{
+  display: flex;
+  justify-content: center;
+  margin-top:1vw;
+}
+
+#airQuality{
+  margin-top:2vw;
+  margin-left:20vw;
+  margin-right: 20vw;
+  padding-top:1vw;
+  padding-bottom:3vw;
+  border-radius: 10px;
+  border:4px black solid;
+}
+
+#airQuality h1{
+  font-size: 100px;
+}
+
+.airDesc{
+  margin-top:3vw;
+  font-weight:bold
+}
+
+#scale{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+  margin-left:10vw;
+  margin-right: 10vw;
+}
+
+#good{
+  background-color: lightgreen;
+}
+
+#fair{
+  background-color: yellow;
+}
+
+#moderate{
+  background-color: orange;
+}
+
+#poor{
+  background-color: red;
+}
+
+#very_poor{
+  background-color: purple;
+}
+
+#very_poor h1,#very_poor h2{
+  color:white;
+}
+
+.scaleNum{
+  width:200px;
+  border: 2px black solid;
+  border-radius: 10px;
+}
+
+@media(max-width:1030px){
+  #header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #pages{
+    justify-content: center;
+    justify-content: space-around;
+    width:100%;
+    margin-top:5vw;
+    font-size:6vw;
+  }
+  #mission p{
+    margin-top:5vw;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  #mission h1{
+    font-size:50px;
+  }
+  .newTimeDivs{
+    margin-top:5vw;
+    display:flex;
+    flex-direction:column;
+    padding:5vw;
+  }
+  #reverseTimeDivs{
+    display:flex;
+    flex-direction:column-reverse;
+  }
+  .timelineSegment{
+    margin-bottom:5vw;
+    font-weight:bold;
+  }
+  #zipSubmit,#airSubmit{
+    margin-top:5vw;
+  }
+  #airQuality{
+    margin-left:5vw;
+    margin-right:5vw;
+    padding:5vw;
+  }
+  #airForm{
+    margin-top:5vw;
+    text-align: center;
+    margin-left:5vw;
+    margin-right:5vw;
+  }
+  #scale{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+  }
+  .scaleNum{
+    margin-bottom:5vw;
+  }
+  #credits{
+    text-align: center;
+    margin-top:5vw;
+  }
+  .carouselImg{
+    width:80vw;
+    height:60vw;
+  }
+  #carouselTxt{
+    color:white;
+    border:none;
+    text-align:center;
+    margin-top:5vw;  
+    margin-bottom:12vw;
+  }
+  #carouselTxt h5{
+    font-weight:bold;
+  }
+}
+
+#credits p{
+  color: white;
+  font-weight: bolder;
+}
+
+#back-to-top-btn{
+  background-color: #2A2A2A;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  border: 0px;
+  text-align:center;
+}
+
+#back-to-top-btn p{
+  font-size: 30px;
+}
+
+#back-to-top-btn:hover, #back-to-top-btn:focus{
+  background-color: #333;
+  color: #fff
+}
+
+#contributors{
+  margin-top:3vw;
+  margin-left:20vw;
+  margin-right:20vw;
+  text-align:center
+}
+
+#contributors h3{
+  margin-top:3vw;
+  font-weight:bolder;
+  color: black;
+  font-size: 30px;
+}
+
+#contributors a{
+  text-decoration:underline;
+  font-size: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
